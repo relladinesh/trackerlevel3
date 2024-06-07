@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tracker.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todobody">
+        <h1 class="h1"> DAILY GOALS TRACKER</h1>
+        <div class=search>
+            <input type="text" class="inp" placeholder="search...">
+            <button class="btn">Add</button>
+        </div>
+        <ul class="ul">
+           
+
+
+        </ul>
+
+    </div>
+    <script>
+        let c=1;
+        let inp=document.querySelector('.inp');
+        let btn=document.querySelector('.btn');
+        let ul=document.querySelector('.ul');
+        btn.addEventListener("click",()=>{
+            console.log(c);
+            if(inp.value===""){
+                alert('enter somthing..');
+            }else{
+                
+                let li=document.createElement('li');
+                ul.append(li)
+                
+                let no=document.createElement('span');
+                no.innerHTML=c++;
+                li.append(no);
+
+                let p=document.createElement('p');
+                p.innerHTML=inp.value;
+                li.append(p);
+
+                let sp=document.createElement('span');
+                sp.innerHTML="x";
+                li.append(sp);
+            }
+            inp.value=''
+         
+        })
+        ul.addEventListener("click",(e)=>{
+                console.log(e.target.value);
+                if(e.target.tagName==="SPAN"){
+                    e.target.parentElement.remove();
+                    c--;
+                }
+                else if(e.target.tagName==="P"){
+                    e.target.classList.toggle('ch');
+                    
+                }
+                
+                
+        },false)
+
+
+    </script>    
+    
+</body>
+</html>

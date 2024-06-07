@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: auto;
+}
+.todobody{
+    width: 100%;
+    max-width: 600px;
+    
+    background-image: url("yoga-hd-wallpaper-024616754-279\ \(1\).webp");
+    margin: 100px auto 0;
+    padding: 40px 30px;
+    border-radius: 20px;
+   
+    text-align: center;
+    background-size: cover;
+   
+}
+.h1{
+    position: relative;
+    bottom: 15px;
+}
+.search{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+
+}
+.search input{
+    padding: 10px 20px;
+    width: 100%;
+    flex: 1;
+    height: 3rem;
+    background-color: aliceblue;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+}
+.search .btn .sea{
+     width: 2rem;
+     height: 2rem;
+     background-position: center;
+     background-size: cover;
+     padding: 6px;
+     border-radius: 20px;
+     
+}
+button{
+    border: none;
+    height: 3rem;
+    
+   background-color: white;
+   padding: 10px 20px;
+    
+    outline: none;
+    font-size: 16;
+    margin-left: 1rem;
+    transition: 0.5s all;
+    border-radius:20px ;
+   }
+
+.ul{
+    margin-top: 5px;
+    width: 100%;
+    
+    color: black;
+    border-radius: 10px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    width:93%;
+    font-size: 17px;
+    padding: 10px ;
+    cursor: pointer;
+   
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+  
+   border-radius:15px ;
+    
+    
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: coral;
+    
+}
+.ch{
+    text-decoration: line-through;
+}
+.sp{
+   
+}
